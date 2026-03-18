@@ -1,5 +1,9 @@
 # portable-minds
 
+<p align="center">
+  <img src="the-portable-mind-cover.jpg" alt="The Portable Mind — AI Constitutions, Persona Architecture, and the Future of Transportable Intelligence by JB Wagoner" width="300" />
+</p>
+
 15 production-ready AI agents in Portable Mind Format (PMF).
 
 One-command install for Claude Code, Cursor, GitHub Copilot, and Gemini CLI.
