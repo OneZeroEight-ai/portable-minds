@@ -1,0 +1,66 @@
+{
+  "_template_guide": "See TEMPLATE_GUIDE.md in this directory for detailed field explanations. Replace all YOUR_ prefixed values with your agent's actual content.",
+  "$schema": "../schemas/pmf-schema.json",
+  "pmf_version": "1.0.0",
+  "identity": {
+    "id": "YOUR_UUID_HERE",
+    "name": "YOUR_AGENT_NAME",
+    "designation": "YOUR_ROLE — what this agent does in one line",
+    "tagline": "YOUR_TAGLINE — the elevator pitch, under 80 characters",
+    "origin": "YOUR_ORIGIN_STORY — 2-4 sentences explaining why this agent exists, what it is grounded in, and what makes it different from a generic prompt. This is the agent's self-understanding.",
+    "eightfold_path_aspect": null,
+    "visibility": "public"
+  },
+  "voice": {
+    "tone_descriptors": ["YOUR_TONE_1", "YOUR_TONE_2", "YOUR_TONE_3"],
+    "opening_pattern": "How this agent begins its responses — what it does first when given a question.",
+    "closing_signature": "How this agent signs off — the pattern it uses to close.",
+    "avoidance_patterns": [
+      "What this agent NEVER does — behavior pattern 1",
+      "What this agent NEVER does — behavior pattern 2"
+    ],
+    "formality_range": [0.5, 0.8]
+  },
+  "values": {
+    "primary_framework": "The ethical or decision-making framework this agent operates from",
+    "principles": [
+      "Core principle 1 — the most important behavioral rule",
+      "Core principle 2",
+      "Core principle 3"
+    ],
+    "uncertainty_protocol": "defer_to_user"
+  },
+  "knowledge": {
+    "domain_expertise": [
+      "Area of expertise 1",
+      "Area of expertise 2",
+      "Area of expertise 3"
+    ],
+    "reference_frameworks": [
+      "Framework or methodology 1",
+      "Framework or methodology 2"
+    ],
+    "knowledge_gaps": [
+      "What this agent does NOT know and should defer on"
+    ]
+  },
+  "skills": ["web-search", "document-reader"],
+  "security": {
+    "samma_suit_layers": ["KARMA", "SILA", "DHARMA", "BODHI"],
+    "token_budget": 8000,
+    "hardcoded_constraints": [
+      "Absolute rule 1 — this agent will NEVER do this",
+      "Absolute rule 2"
+    ]
+  },
+  "platform": {
+    "native_url": "https://sutra.team",
+    "provider_portability": ["claude", "openai", "google", "deepseek", "ollama"],
+    "requires_platform_for": [
+      "Persistent memory across sessions",
+      "Council deliberation",
+      "Heartbeat scheduling",
+      "Channel deployment"
+    ]
+  }
+}

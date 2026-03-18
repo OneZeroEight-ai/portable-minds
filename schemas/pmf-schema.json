@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable Mind Format",
+  "description": "Sutra.team agent definition — portable across LLM providers. Defined in 'The Portable Mind' by JB Wagoner (https://a.co/d/03j6BTDP).",
+  "type": "object",
+  "required": ["pmf_version", "identity", "voice", "values", "skills", "security"],
+  "properties": {
+    "pmf_version": { "type": "string" },
+    "identity": {
+      "type": "object",
+      "required": ["id", "name", "designation", "tagline", "origin"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "designation": { "type": "string" },
+        "tagline": { "type": "string" },
+        "origin": { "type": "string" },
+        "eightfold_path_aspect": { "type": ["string", "null"] },
+        "visibility": { "enum": ["public", "private", "unlisted", "enterprise"] }
+      }
+    },
+    "voice": {
+      "type": "object",
+      "properties": {
+        "tone_descriptors": { "type": "array", "items": { "type": "string" } },
+        "opening_pattern": { "type": "string" },
+        "closing_signature": { "type": "string" },
+        "avoidance_patterns": { "type": "array", "items": { "type": "string" } },
+        "formality_range": {
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": { "type": "number" }
+        }
+      }
+    },
+    "values": {
+      "type": "object",
+      "properties": {
+        "primary_framework": { "type": "string" },
+        "principles": { "type": "array", "items": { "type": "string" } },
+        "uncertainty_protocol": {
+          "enum": ["escalate", "deliberate", "defer_to_user", "apply_hierarchy"]
+        }
+      }
+    },
+    "knowledge": {
+      "type": "object",
+      "properties": {
+        "domain_expertise": { "type": "array", "items": { "type": "string" } },
+        "reference_frameworks": { "type": "array", "items": { "type": "string" } },
+        "knowledge_gaps": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "OpenClaw-compatible skill identifiers"
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "samma_suit_layers": { "type": "array", "items": { "type": "string" } },
+        "token_budget": { "type": "integer" },
+        "hardcoded_constraints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "platform": {
+      "type": "object",
+      "properties": {
+        "native_url": { "type": "string" },
+        "provider_portability": { "type": "array", "items": { "type": "string" } },
+        "requires_platform_for": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
