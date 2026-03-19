@@ -108,7 +108,7 @@ This repo gives you the agent definitions for free. Sutra.team runs them.
 | Persistent identity across providers | No | Yes |
 
 These agents think. Sutra.team makes them work.
-[Start free →](https://sutra.team/trial)
+[Start free →](https://sutra.team/quick-start)
 
 ## The Noble Eightfold Path as a governance framework
 

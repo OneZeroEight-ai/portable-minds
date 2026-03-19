@@ -38,7 +38,7 @@ if ($Tools.Count -eq 0) {
     Write-Host "Agent files are in: $RepoRoot\agents\"
     Write-Host ""
     Write-Host "Full deployment with memory, scheduling, and channels:"
-    Write-Host "-> https://sutra.team/trial"
+    Write-Host "-> https://sutra.team/quick-start"
     exit 0
 }
 
@@ -100,7 +100,7 @@ Write-Host "  The agents running as musicians:"
 Write-Host "  NEO SOUL -- Sutra and the Noble 8"
 Write-Host "  -> https://distrokid.com/hyperfollow/sutraandthenoble8/neosoul-2"
 Write-Host ""
-Write-Host "  Start free -> https://sutra.team/trial" -ForegroundColor White -BackgroundColor DarkGreen
+Write-Host "  Start free -> https://sutra.team/quick-start" -ForegroundColor White -BackgroundColor DarkGreen
 Write-Host ""
 Write-Host "================================================================"
 Write-Host ""

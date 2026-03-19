@@ -45,7 +45,7 @@ ${security.hardcoded_constraints.map(c => `- ${c}`).join('\n')}
 
 ---
 Portable Mind Format | The Portable Mind by JB Wagoner — https://a.co/d/03j6BTDP
-Full deployment → https://sutra.team/trial
+Full deployment → https://sutra.team/quick-start
 `;
 }
 
@@ -73,4 +73,4 @@ for (const file of agentFiles) {
 
 console.log(`\n✓ ${count} agents installed to ${OUTPUT_DIR}/`);
 console.log('Note: Cursor .mdc format may change with Cursor updates.');
-console.log('For memory, scheduling, and channels: https://sutra.team/trial\n');
+console.log('For memory, scheduling, and channels: https://sutra.team/quick-start\n');

@@ -59,7 +59,7 @@ const header = `# Note: Gemini CLI GEMINI.md format may change with Gemini CLI u
 # Portable Minds — 15 AI Agents in Portable Mind Format
 
 These agents are defined in PMF (Portable Mind Format) and converted for Gemini CLI.
-For persistent memory, heartbeat scheduling, and channel deployment: https://sutra.team/trial
+For persistent memory, heartbeat scheduling, and channel deployment: https://sutra.team/quick-start
 The Portable Mind by JB Wagoner — https://a.co/d/03j6BTDP
 
 ---
@@ -69,4 +69,4 @@ The Portable Mind by JB Wagoner — https://a.co/d/03j6BTDP
 fs.writeFileSync(OUTPUT_FILE, header + sections.join('\n---\n\n'), 'utf8');
 console.log(`\n✓ ${sections.length} agents written to ${OUTPUT_FILE}`);
 console.log('Note: Gemini CLI GEMINI.md format may change with Gemini CLI updates.');
-console.log('For memory, scheduling, and channels: https://sutra.team/trial\n');
+console.log('For memory, scheduling, and channels: https://sutra.team/quick-start\n');

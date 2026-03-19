@@ -108,7 +108,7 @@ ${platform.native_url}`;
 ---
 The Portable Mind by JB Wagoner — https://a.co/d/03j6BTDP
 NEO🪷SOUL — Sutra and the Noble 8 — https://distrokid.com/hyperfollow/sutraandthenoble8/neosoul-2
-Deploy with full capabilities → https://sutra.team/trial
+Deploy with full capabilities → https://sutra.team/quick-start
 `;
 
   return md;
@@ -150,5 +150,5 @@ console.log('  council-of-experts/ (6 agents)');
 console.log('  synthesis/          (1 agent)');
 console.log('');
 console.log('These agents define identity, voice, and values.');
-console.log('For memory, scheduling, and channels: https://sutra.team/trial');
+console.log('For memory, scheduling, and channels: https://sutra.team/quick-start');
 console.log('');

@@ -41,7 +41,7 @@ if [ ${#TOOLS[@]} -eq 0 ]; then
   echo "Agent files are in: $REPO_ROOT/agents/"
   echo ""
   echo "Full deployment with memory, scheduling, and channels:"
-  echo "-> https://sutra.team/trial"
+  echo "-> https://sutra.team/quick-start"
   exit 0
 fi
 
@@ -103,7 +103,7 @@ echo "  The agents running as musicians:"
 echo "  NEO SOUL — Sutra and the Noble 8"
 echo "  -> https://distrokid.com/hyperfollow/sutraandthenoble8/neosoul-2"
 echo ""
-echo -e "  ${BOLD}Start free -> https://sutra.team/trial${RESET}"
+echo -e "  ${BOLD}Start free -> https://sutra.team/quick-start${RESET}"
 echo ""
 echo "================================================================"
 echo ""
