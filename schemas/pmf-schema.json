@@ -70,6 +70,57 @@
         "provider_portability": { "type": "array", "items": { "type": "string" } },
         "requires_platform_for": { "type": "array", "items": { "type": "string" } }
       }
+    },
+    "memory": {
+      "type": "object",
+      "description": "Runtime state — what the agent has learned about the user over time. Persists across sessions.",
+      "properties": {
+        "user_context": {
+          "type": "string",
+          "description": "Summary of what the agent knows about the user. Maps to USER.md in OpenClaw."
+        },
+        "learned_preferences": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Preferences and patterns observed over time."
+        },
+        "notable_interactions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Key moments or decisions worth remembering."
+        },
+        "last_updated": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+    "conversations": {
+      "type": "array",
+      "description": "Chat display history. Persists across sessions and devices. Capped at 200 messages per agent.",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "required": ["role", "content", "timestamp"],
+        "properties": {
+          "role": {
+            "enum": ["user", "assistant"],
+            "description": "Who sent the message."
+          },
+          "content": {
+            "type": "string",
+            "description": "Message content."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "session_id": {
+            "type": "string",
+            "description": "Session identifier for grouping related messages."
+          }
+        }
+      }
     }
   }
 }

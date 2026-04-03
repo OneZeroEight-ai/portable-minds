@@ -61,6 +61,32 @@ Array of OpenClaw-compatible skill identifiers. Common skills:
 | `provider_portability` | Which LLM providers can run the persona |
 | `requires_platform_for` | Features that need sutra.team (memory, scheduling, channels, etc.) |
 
+## Memory & Conversations (v1.1.0)
+
+PMF v1.1.0 adds two optional runtime fields that make personas truly portable — including their accumulated knowledge and conversation history.
+
+### memory
+
+Stores what the agent has learned about the user over time. In OpenClaw this maps to USER.md. When a PMF is exported and imported on a new platform, the agent remembers who it was talking to.
+
+| Field | Purpose |
+|---|---|
+| `user_context` | Summary of what the agent knows about the user |
+| `learned_preferences` | Preferences and patterns observed over time |
+| `notable_interactions` | Key moments or decisions worth remembering |
+| `last_updated` | ISO 8601 timestamp of last memory update |
+
+### conversations
+
+Stores the chat display history — up to 200 messages per agent. This enables:
+- Cross-device chat history without requiring a messaging platform like Telegram
+- Full conversation export and import
+- Platform-independent history portability
+
+Each message has `role` (user/assistant), `content`, `timestamp`, and optional `session_id`.
+
+When conversations exceeds 200 messages, oldest messages are removed. The agent's memory field should be updated to summarize removed conversations so context is not lost.
+
 ---
 
 For PMF specification depth, see: *The Portable Mind* by JB Wagoner — https://a.co/d/03j6BTDP

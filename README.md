@@ -9,9 +9,14 @@
 One-command install for Claude Code, Cursor, GitHub Copilot, and Gemini CLI.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![PMF Version](https://img.shields.io/badge/PMF-1.0.0-green.svg)](schemas/pmf-schema.json)
+[![PMF Version](https://img.shields.io/badge/PMF-1.1.0-green.svg)](schemas/pmf-schema.json)
 [![Agents](https://img.shields.io/badge/agents-15-purple.svg)](agents/)
 [![sutra.team](https://img.shields.io/badge/platform-sutra.team-orange.svg)](https://sutra.team)
+
+### What's new in v1.1.0
+- `memory` field — portable user context that travels with the persona
+- `conversations` field — cross-device chat history built into the PMF spec
+- IceClaw.online uses PMF v1.1.0 natively
 
 ## What's in the box
 
